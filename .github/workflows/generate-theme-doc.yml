@@ -1,7 +1,7 @@
 name: Generate Theme Readme
 on:
   push:
-    branches: [ * ]
+    branches: '*'
     schedule:
       - cron: " */2 * * * *"
     paths:
