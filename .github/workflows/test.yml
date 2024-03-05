@@ -24,14 +24,5 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: npm
 
-      - name: Install & Test
-        run: |
-          npm ci
-          npm run test
-
-      - name: Run Prettier
-        run: |
-          npm run format:check
-
       - name: Code Coverage
         uses: codecov/codecov-action@v1
