@@ -1,8 +1,9 @@
 name: Generate Theme Readme
 on:
   push:
-    branches:
-      - master
+    branches: [ * ]
+    schedule:
+      - cron: " */2 * * * *"
     paths:
       - "themes/index.js"
 
