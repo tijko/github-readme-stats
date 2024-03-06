@@ -1,11 +1,7 @@
 name: Generate Theme Readme
 on:
   push:
-    branches: '*'
-    schedule:
-      - cron: " */2 * * * *"
-    paths:
-      - "themes/index.js"
+    branches: 'master'
 
 jobs:
   generateThemeDoc:
