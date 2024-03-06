@@ -24,14 +24,10 @@ jobs:
         run: |
           npm ci
           npm run theme-readme-gen
-        env:
-          CI: true
 
       - name: Run Script
         uses: skx/github-action-tester@master
         with:
           script: ./scripts/push-theme-readme.sh
-        env:
-          CI: true
           PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
           GH_REPO: ${{ secrets.GH_REPO }}
